@@ -1,19 +1,41 @@
 :root {
-  --heading-family-font: "Playfair Display", serif;
-  --content-family-font: poppins;
-  --branding-color: #6c63ff;
+  --heading-font-family: "Playfair Display", serif;
+  --content-font-family: poppins;
+  --branding-color: #ff007b;
   --secondary-color: #f9f7fe;
+  --third-color: #ff84bf;
+}
+
+body {
+  margin: 25px;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.nav-link {
+  color: var(--branding-color);
+}
+
+.navbar-brand {
+  color: var(--branding-color);
 }
 
 h1 {
-  font-family: var(--heading-family-font);
+  font-family: var(--heading-font-family);
   font-size: 96px;
   font-weight: bold;
-  color: black;
+  color: var(--branding-color);
 }
 
 h2 {
   font-size: 64px;
+  color: var(--third-color);
+}
+
+h3 {
+  color: var(--third-color);
 }
 
 h1,
@@ -22,8 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
-  font-family: var(--heading-family-font);
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
@@ -34,7 +55,11 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 100px 20px;
+}
+
+.content a {
+  text-decoration: none;
 }
 
 .content h1 {
@@ -49,7 +74,7 @@ p {
 .content h3 {
   font-size: 24px;
   line-height: 1.5;
-  font-family: var(--content-family-font);
+  font-family: var(--content-font-family);
   margin: 20px 0 0;
 }
 
@@ -68,28 +93,28 @@ p {
 }
 
 .hero p {
-  color: #272142;
-  font-family: var(--content-family-font);
+  color: var(--third-color);
+  font-family: var(--content-font-family);
   font-weight: 700;
   font-size: 36px;
   margin: 0;
 }
 
 .hero h2 {
-  color: #272142;
-  font-family: var(--content-family-font);
+  color: var(--third-color);
+  font-family: var(--content-font-family);
   font-size: 24px;
   line-height: 2;
 }
 
 .btn-branding {
-  background-color: #6c63ff;
+  background-color: var(--branding-color);
   color: var(--secondary-color);
   border-radius: 4px;
   padding: 15px 30px;
   font-size: 18px;
   line-height: 27px;
-  font-family: var(--content-family-font);
+  font-family: var(--content-font-family);
 }
 
 .btn-branding-outline {
@@ -99,7 +124,7 @@ p {
   padding: 15px 30px;
   font-size: 18px;
   line-height: 27px;
-  font-family: var(--content-family-font);
+  font-family: var(--content-font-family);
 }
 
 .project-desciption {
